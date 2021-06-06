@@ -3,6 +3,7 @@ from .models import Students
 
 class StudentsSerializer(serializers.HyperlinkedModelSerializer):
 
+    
     class Meta:
         model = Students
         fields = ('id', 'initials', 'location', 'letter',)
